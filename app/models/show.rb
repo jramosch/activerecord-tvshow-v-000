@@ -10,12 +10,11 @@ class Show < ActiveRecord::Base
   end
 
   def self.lowest_rating
-    binding.pry
     Show.minimum(:rating)
   end
 
   def least_popular_show
-
+    
   end
 
   def ratings_sum
