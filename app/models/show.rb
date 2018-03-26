@@ -14,7 +14,7 @@ class Show < ActiveRecord::Base
   end
 
   def least_popular_show
-    
+    Show.where(rating: lowest_rating).pluck(:name)[0]
   end
 
   def ratings_sum
